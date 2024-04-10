@@ -154,6 +154,17 @@ public class Rules extends JPanel {
         }
     }
 
+    private int[] getShadowPosition(Tetrimino tetrimino, int tetriX, int tetriY) {
+        int shadowX = tetriX;
+        int shadowY = tetriY;
+    
+        while (isMoveValid(tetrimino, shadowX, shadowY + 1)) {
+            shadowY++;
+        }
+    
+        return new int[] { shadowX, shadowY };
+    }
+
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
@@ -191,6 +202,17 @@ public class Rules extends JPanel {
                 if (currentTetrimino.getShape()[y][x] != 0) {
                     g.setColor(currentTetrimino.getColor());
                     g.fillRect((tetriX + x) * 30, (tetriY + y) * 30, 30, 30);
+                }
+            }
+        }
+
+        // シャドーのテトリミノを描画
+        int[] shadowPosition = getShadowPosition(currentTetrimino, tetriX, tetriY);
+        for (int y = 0; y < 4; y++) {
+            for (int x = 0; x < 4; x++) {
+                if (currentTetrimino.getShape()[y][x] != 0) {
+                    g.setColor(new Color(currentTetrimino.getColor().getRed(), currentTetrimino.getColor().getGreen(), currentTetrimino.getColor().getBlue(), 100));
+                    g.fillRect((shadowPosition[0] + x) * 30, (shadowPosition[1] + y) * 30, 30, 30);
                 }
             }
         }
