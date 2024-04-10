@@ -2,7 +2,7 @@
 
 YUSEI_TETRISはJavaで実装されたシンプルなテトリスだってばよ。
 
-https://github.com/YuseiItoWstr/YUSEI_TETRIS/assets/131947858/23d48411-a40b-49ec-bf44-441435e6584e
+https://github.com/YuseiItoWstr/YUSEI_TETRIS/assets/131947858/4865e325-5f12-4202-88fb-5afbb60d71e0
 
 ## 概要
 
