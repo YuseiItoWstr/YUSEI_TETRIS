@@ -2,7 +2,7 @@
 
 YUSEI_TETRISはJavaで実装されたシンプルなテトリスだってばよ。
 
-[text](images/TetrisPlay.mov)
+https://github.com/YuseiItoWstr/YUSEI_TETRIS/assets/131947858/23d48411-a40b-49ec-bf44-441435e6584e
 
 ## 概要
 
