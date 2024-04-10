@@ -1,6 +1,7 @@
 Icon?
 .vscode
 .DS_Store
+/images
 # Compiled class file
 *.class
 
