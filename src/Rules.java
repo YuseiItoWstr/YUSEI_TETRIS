@@ -206,7 +206,7 @@ public class Rules extends JPanel {
             }
         }
 
-        // シャドーのテトリミノを描画
+        // シャドーを描画
         int[] shadowPosition = getShadowPosition(currentTetrimino, tetriX, tetriY);
         for (int y = 0; y < 4; y++) {
             for (int x = 0; x < 4; x++) {
