@@ -23,7 +23,7 @@ https://github.com/YuseiItoWstr/YUSEI_TETRIS/assets/131947858/4865e325-5f12-4202
 
 1.  このリポジトリをクローン
 2.  コマンドラインで`src` ディレクトリまで行く
-3.  `javac -d classes Main.java Rules.java GameBoard.java Tetrimino.java AudioPlayer.java` でコンパイル
+3.  `javac -d ../classes Main.java Rules.java GameBoard.java Tetrimino.java AudioPlayer.java` でコンパイル
 4.  `java -classpath ../classes Main` で起動
 5.  (本当は.jarファイルを実行するだけでいいはずですが、音楽が流れません...修正中)
 

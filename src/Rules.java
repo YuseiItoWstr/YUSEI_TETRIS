@@ -10,6 +10,10 @@ import java.util.Collections;
 import java.util.List;
 
 public class Rules extends JPanel {
+    public static final int EASY = 1;
+    public static final int NORMAL = 2;
+    public static final int HARD = 3;
+    public static final int CRAZY = 4;
     private GameBoard board;
     private Tetrimino currentTetrimino;
     private List<Tetrimino> onecycletetriminoList;
@@ -61,6 +65,7 @@ public class Rules extends JPanel {
         }  
         nextTetriminoIndex = 0;
         initGame();
+        repaint();
     }
 
     private void initGame() {
